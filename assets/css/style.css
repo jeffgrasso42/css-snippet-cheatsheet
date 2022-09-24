@@ -1,0 +1,44 @@
+/* CSS variable declarations */
+:root {
+  --magenta: #e867ed;
+  --blue-grey: #2c2e37;
+  --light-grey: #e0eae5;
+}
+
+/* page defaults */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--blue-grey);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light-grey);
+}
+
+h1, 
+h2,
+h3 {
+  color: var(--magenta);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 3em;
+}
+
+header p {
+  width: 70%;
+  margin: 0 auto 20px auto;
+}
+
+section p {
+  color: var(--magenta);
+}

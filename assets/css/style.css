@@ -1,6 +1,6 @@
 /* CSS variable declarations */
 :root {
-  --magenta: #e867ed;
+  --magenta: rgb(232, 102, 236);
   --blue-grey: #2c2e37;
   --light-grey: #e0eae5;
 }
@@ -39,6 +39,60 @@ header p {
   margin: 0 auto 20px auto;
 }
 
-section p {
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.code-card {
+  display: flex;
+  flex-flow: column;
+  margin: 20px 0;
+  padding: 5px;
+  width: 30%;
+  border: 2px dashed var(--light-grey);  
+}
+
+.code-card p {
+  padding: 5px;
   color: var(--magenta);
+}
+
+.card-header {
+  position: relative;
+  margin: -25px 15px 0 15px;
+  border: 2px solid var(--light-grey);
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--blue-grey);
+  font-size: 1.5em;
+}
+
+.code-card pre {
+  flex: 1 1 auto;
+  padding: 10px 5px 5px 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      rgba(232, 102, 236, 0.3) 0%,
+      rgba(232, 102, 236, 0.6) 100%
+    );
+}
+
+footer {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .code-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .code-card {
+    width: 90%;
+  }
 }
